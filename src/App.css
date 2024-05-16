@@ -1,38 +1,578 @@
-.App {
-  text-align: center;
+/*flag csss */
+.flagmenu .MuiPaper-root {
+  top: 70px !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flagmenu {
+  animation: mymove 0.5s;
+  animation-fill-mode: forwards;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes mymove {
+  0% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
   }
 }
+.flagmenu .MuiList-root {
+  padding: 0;
+}
+.flagmenu .menuitem {
+  padding: 0;
+}
+.differentflag {
+  background: #fff;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  width: 150px;
+}
+.differentflag img {
+  width: 18px;
+  margin-right: 15px;
+}
+.differentflag h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #878a99;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+}
+.differentflag .flagstype {
+  display: flex;
+  align-items: center;
+  padding: 12px 12px;
+}
+.differentflag .flagstype:hover {
+  background: #f3f6f9;
+}
+.differentflag .flagstype:last-child {
+  margin-bottom: 0;
+}
+.submenu ul li {
+  font-size: 14px;
+}
+.submenu ul {
+  padding-right: 40px;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* widgtesapp css */
+.widgetsmenu .MuiPaper-root {
+  top: 70px !important;
+}
+.widgetsmenu {
+  animation: mymove 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes mymove {
+  0% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.widgetsmenu ul {
+  width: 350px;
+}
+@media (max-width: 425px) {
+  .widgetsmenu ul {
+    width: 100%;
+  }
+}
+.widgetsmenu ul li {
+  display: unset;
+  padding: 0;
+}
+.widgetsmenu .widgetsdropdown {
+  display: unset;
+}
+.widgetsmenu .github {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+}
+.widgetsmenu .github:first-child {
+  padding-bottom: 0;
+}
+.viewpage {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  justify-content: space-between;
+  border-bottom: 1px dashed #80808026;
+}
+.viewpage .viewbtn {
+  display: flex;
+  align-items: center;
+}
+.viewbtn button {
+  color: #58caea;
+  background-color: #57caea1a;
+  font-size: 12px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  text-transform: capitalize;
+}
+.viewbtn svg {
+  font-size: 14px;
+}
+.viewpage h3 {
+  font-size: 16px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-weight: 600;
+  color: #495057;
+}
+.github .subgithub {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 8px;
+  width: 100px;
+}
+.subgithub:hover {
+  background: #f3f6f9;
+}
+.subgithub:hover span {
+  color: #5ea3cb;
+}
+.subgithub span {
+  font-size: 14px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-weight: 500;
+  color: #212529;
+}
+
+/* addtocart css */
+.cartmenu .MuiPaper-root {
+  top: 70px !important;
+}
+.cartmenu {
+  animation: mymove 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes mymove {
+  0% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.cartmenu ul {
+  width: 450px;
+}
+@media (max-width: 767px) {
+  .cartmenu ul {
+    width: 100%;
+  }
+}
+.cartmenu ul li {
+  display: unset;
+  padding: 0;
+}
+.cartmenu .mycard {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #80808026;
+  padding: 10px 14px;
+}
+.mycard h1 {
+  font-size: 16px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-weight: 600;
+  color: #495057;
+}
+.mycard p {
+  color: #f7b84b;
+  background-color: #f7b84b1a;
+  font-size: 12px;
+}
+.cartmenu .cartitems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin: 0 8px;
+}
+.cartmenu .cartitems:hover {
+  background: #f3f6f9;
+}
+.cartmenu .cartitems img {
+  width: 30px;
+  background: #f3f6f9;
+  padding: 10px;
+  border-radius: 100%;
+  margin-right: 14px;
+}
+.cartitems p {
+  color: #495057;
+  font-size: 14px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  line-height: 12px;
+  font-weight: 600;
+}
+.cartitems span {
+  color: #21252987;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+}
+.cartitems svg {
+  font-size: 10px;
+}
+.cartitems .productitem {
+  display: flex;
+  align-items: center;
+}
+.cartitems h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 30px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+}
+.dolar {
+  display: flex;
+  align-items: center;
+  color: #495057;
+}
+.dolar svg {
+  font-size: 20px;
+}
+.cartmenu .total h2 {
+  color: #21252987;
+  font-weight: 500;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-size: 20px;
+}
+.total {
+  padding: 10px 20px;
+}
+.total .totalamount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total button {
+  width: 100%;
+  background: #6ada7d;
+  color: #fff;
+  font-size: 14px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.total button:hover {
+  background-color: #3e9f4ee8;
+}
+
+/* profile css */
+.annaprofile .MuiPaper-root {
+  top: 70px !important;
+}
+.annaprofile {
+  animation: mymove 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes mymove {
+  0% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.annaprofile ul li:first-child {
+  font-size: 12px;
+  color: #21252987;
+  margin-top: 6px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-weight: 800;
+}
+.annaprofile ul li {
+  font-size: 14px;
+  color: #212529a6;
+  margin-top: 6px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-weight: 800;
+}
+.annaprofile ul li svg {
+  color: #878a99;
+  font-size: 18px;
+  margin-right: 9px;
+}
+.annaprofile ul li:hover {
+  background-color: #f3f6f9;
+}
+.annaprofile ul li p {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+}
+.annaprofile .setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.annaprofile .setting .new {
+  display: flex;
+  align-items: center;
+}
+.annaprofile h6 {
+  font-size: 13px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  color: #6ada7d;
+  background: #6ada7d1a;
+  margin-left: 60px;
+  padding: 2px 7px;
+  font-weight: 600;
+}
+
+/* notifiation menu */
+.notifimenu .MuiPaper-root {
+  top: 70px !important;
+}
+.notifimenu {
+  animation: mymove 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes mymove {
+  0% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.notifimenu .newnotifi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.notifimenu .menuitem button {
+  padding: 0;
+  color: #ffffff99;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  text-transform: capitalize;
+}
+.notifimenu .menuitem .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #5ea3cb;
+  background-color: #fff;
+}
+.notifimenu .newnotifi h2 {
+  color: #fff;
+  font-size: 18px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-weight: 600;
+}
+.notifimenu .newnotifi span {
+  color: #fff;
+  font-size: 14px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-weight: 600;
+  padding: 4px 8px;
+  background: #f3f6f91a;
+}
+.notifimenu .menuitem {
+  background: #5ea3cb;
+  padding: 10px 16px;
+  position: fixed;
+  z-index: 99;
+  padding-bottom: 0;
+  width: 320px;
+}
+.notifimenu ul {
+  padding: 0;
+}
+.notifimenu ul li {
+  padding: 0;
+}
+.notifimenu ul li:hover {
+  background-color: #fff !important;
+}
+.notifimenu .tab1 {
+  padding: 10px;
+  margin: 12px 10px;
+  padding-top: 100px;
+  height: 280px;
+  width: 310px;
+}
+.notifimenu .tab1 .all {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 12px;
+  background: #f3f6f9;
+  padding: 12px 22px;
+}
+.notifimenu .tab1 .all .new {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.notifimenu .tab1 .new:first-child {
+  margin-bottom: 18px;
+}
+/* .notifimenu .tab1 .new:last-child .time{
+  margin-right: 20px;
+} */
+.notifimenu .tab1 .all h3 {
+  font-size: 14px;
+  color: #495057;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.notifimenu .tab1 .all .time svg {
+  background: #58caea2e;
+  color: #64cbea;
+  font-size: 16px;
+  border-radius: 100%;
+  padding: 8px;
+}
+.notifimenu .tab1 .all p {
+  color: #878a99;
+  font-size: 13px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+}
+.notifimenu .tab1 .all p svg {
+  color: #ffc83d;
+}
+.notifimenu .tab1 .all .second {
+  display: flex;
+  align-items: center;
+  color: #878a99;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-size: 12px;
+}
+.notifimenu .tab1 .all h3 span {
+  color: #7092d6;
+}
+.notifimenu .tab1 .all .second svg {
+  font-size: 12px;
+}
+.notifimenu .tab1 .receivemessages h6 {
+  font-size: 14px;
+  color: #495057;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.notifimenu .tab1 .receivemessages h6 span {
+  color: #6ada7d;
+}
+.notifimenu .tab1 .receivemessages {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 12px 22px;
+}
+.notifimenu .tab1 .receivemessages .min {
+  display: flex;
+  align-items: center;
+  color: #878a99;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-size: 12px;
+}
+.min svg {
+  font-size: 12px;
+}
+.notifimenu .tab1 .receivemessages .message svg {
+  color: #fb9174;
+  background-color: #feeae4;
+  font-size: 16px;
+  border-radius: 100%;
+  padding: 8px;
+}
+.notifimenu .tab1 .receivemessages p {
+  color: #878a99;
+  font-size: 13px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+}
+/* .notifimenu .tab1 .space{
+  margin-right: 20px;
+} */
+.notifimenu .tab1 .spacetop {
+  margin-top: 20px;
+}
+.notifimenu .tab1 .viewnotification {
+  text-align: center;
+}
+.viewnotification button {
+  color: #6ada7d;
+  background-color: #6ada7d1a;
+  text-transform: capitalize;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-weight: 800;
+  padding: 8px 16px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.viewnotification button svg {
+  font-size: 16px;
+  margin-left: 5px;
+}
+.notifimenu .tab2 .all {
+  background: none;
+}
+.notifimenu .tab2 {
+  padding: 10px;
+  margin: 12px 10px;
+  padding-top: 100px;
+  /* height: 280px; */
+  width: 310px;
+}
+.notifimenu .tab2 .bell {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.notifimenu .tab2 .bell img {
+  width: 100px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.notifimenu .tab2 .title {
+  color: #495057;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.notifimenu .message {
+  margin-right: 18px;
+}
+.notifimenu .time {
+  margin-right: 18px;
+}
+.openSidebar {
+  margin-left: 170px;
+}
+@media (max-width: 767px) {
+  .openSidebar {
+    margin-left: 0;
   }
-  to {
-    transform: rotate(360deg);
+}
+.mainpage {
+  margin-right: 280px;
+}
+@media (max-width: 900px) {
+  .mainpage {
+    margin-right: 0;
   }
+}
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
+.opennav {
+  display: block;
+}
+.header .dashboardheader {
+  margin-left: 170px;
+}
+.sideopen {
+  transition: 0.4s;
 }
